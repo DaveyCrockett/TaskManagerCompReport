@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/app.css">
+    <title>Task Manager</title>
+</head>
+<body>
+
+    <main class="container main-content">
+        <section class="section-list">
+            <h1 class="taskTitle">My Pending Tasks</h1>
+            <button id="btnShowDetails" class="btn">Show/Hide Form</button>
+            <label id="countTask">Task Count: <span id="taskNum">0</span></label>
+            <div class="task-list">
+                <!-- display tasks here -->
+            </div>
+        </section>
+        <section class="section-form">
+            <h1 class="registerTitle">Register Task</h1>
+
+            <div class="form">
+                <div class="my-control" id="priContainer">
+                    <label for="">Priority: </label>
+                    <i class="far fa-star priorityExclamation" id="iPriority"></i>
+                </div>
+
+                <div class="my-control">
+                    <label for="">Title</label>
+                    <input type="text" id="txtTitle" class="form-control">
+                </div>
+
+                <div class="my-control">
+                    <label for="">Due Date</label>
+                    <input type="datetime-local" id="txtDate" class="form-control">
+                </div>
+                
+                <div class="my-control">
+                    <label for="">Description</label>
+                    <textarea name="Description" id="txtDescription" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                
+                
+                <div class="my-control">
+                    <label for="">Status</label>
+                    <select id="selStatus" class="form-control" name="" id="">
+                        <option value="New">New</option>
+                        <option value="In progress">In progress</option>
+                        <option value="Completed">Completed</option>
+                        <option value="Cancelled">Cancelled</option> 
+                    </select>
+                </div>
+
+                <div class="my-control">
+                    <label for="">Color</label>
+                    <input id="selColor" type="color" class="form-control">
+                </div>
+
+                <div class="my-control">
+                    <label for="">Category</label>
+                    <select id="selCategory" name="" id="" class="form-control">
+                        <option value="School">School</option>
+                        <option value="Work">Work</option>
+                        <option value="Fun">Fun</option>
+                        <option value="Chores">Chores</option> 
+                    </select>
+                </div>
+            </div>
+
+            <button id="saveTask" class="btn">Save</button>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="SCRIPTS/task.js"></script>
+    <script src="SCRIPTS/app.js"></script>
+</body>
+</html>

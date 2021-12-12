@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    background-color: #eec58b;
+    height: 100%;
+}
+
+.main-content{
+    display: flex;
+    height: 100%;
+}
+
+.main-content .section-list{
+    flex: 5;
+    border: 2px solid black;
+    background-image: url('../images/pexels-pixabay-531767.jpg');
+    background-size: cover;
+    padding: 5px;
+}
+
+.main-content .section-form{
+    flex: 3;
+    border: 2px solid black;
+}
+
+.taskTitle {
+    color: #e2ac60;
+    text-align: center;
+}
+
+.btn {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #e2ac60;
+}
+
+.btn:hover{
+    box-shadow: 5px 5px 5px black;
+    background-color: black;
+    color: rgb(230, 215, 19);
+}
+
+.registerTitle {
+    text-align: center;
+    color: #e2ac60;
+}
+
+.my-control{
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    
+}
+
+.my-control label{
+    display: block;
+    width: 90px;
+    color: #642b09;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-control {
+    background-color: #e2ac60;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: black;
+    color: rgb(230, 215, 19);
+}
+
+#priContainer{
+    display: flex;
+}
+
+.priorityExclamation{
+    font-size: 18pt;
+    cursor: pointer;
+    color: rgb(230, 215, 19);
+}
+
+#iPriority.fas {
+    color: rgb(230, 215, 19);
+}
+
+.task {
+    border: 1px solid #ababac;
+    display: flex;
+    margin-bottom: 12px;
+    padding: 10px 20px;
+    align-items: center;
+    color: white;
+    background-color: #e2ac60;
+    border-radius: 12px;
+    
+}
+
+.task:hover {
+    box-shadow: 5px 5px 5px black;
+    background-color: black;
+    color: rgb(230, 215, 19);
+}
+
+.task i {
+    flex: 1;
+}
+
+.task .info {   
+    flex: 6;
+}
+
+.task .info p {
+    margin-bottom: 0;
+}
+
+.task .details {
+    flex: 2;
+}
+
+#countTask {
+   width: 70%;
+   text-align: right;
+   color: #642b09;
+   font-size: 16pt;
+}
+
+#saveTask {
+    margin-left: 20px;
+}
+
+.section-form {
+    background-color: #3aafd0;
+}
+
